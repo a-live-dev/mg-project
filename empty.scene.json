@@ -1,0 +1,887 @@
+{
+  "version": 4,
+  "entities": {
+    "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC": {
+      "components": [
+        {
+          "name": "mtdata",
+          "props": {
+            "meta_data": ""
+          }
+        },
+        {
+          "name": "fog",
+          "props": {
+            "type": "linear",
+            "color": 2363195,
+            "near": 1,
+            "far": 750,
+            "density": 0.0025
+          }
+        },
+        {
+          "name": "audio-settings",
+          "props": {
+            "usePositionalAudio": true,
+            "avatarDistanceModel": "inverse",
+            "avatarRolloffFactor": 2,
+            "avatarRefDistance": 1,
+            "avatarMaxDistance": 10000,
+            "mediaVolume": 1,
+            "mediaDistanceModel": "inverse",
+            "mediaRolloffFactor": 1,
+            "mediaRefDistance": 20,
+            "mediaMaxDistance": 10000,
+            "mediaConeInnerAngle": 360,
+            "mediaConeOuterAngle": 0,
+            "mediaConeOuterGain": 0
+          }
+        },
+        {
+          "name": "renderer-settings",
+          "props": {
+            "LODs": {
+              "x": 5,
+              "y": 15,
+              "z": 30
+            },
+            "overrideRendererSettings": false,
+            "csm": true,
+            "toneMapping": 1,
+            "toneMappingExposure": 0.8,
+            "shadowMapType": 2
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": 1,
+            "envMapTextureType": 0,
+            "envMapSourceColor": 16777215,
+            "envMapSourceURL": "/hdr/cubemap/skyboxsun25deg/",
+            "envMapIntensity": 1,
+            "envMapCubemapBake": {
+              "bakeType": 1,
+              "resolution": 512,
+              "refreshMode": 0,
+              "envMapOrigin": "",
+              "boxProjection": true,
+              "bakePosition": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "bakePositionOffset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "bakeScale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "empty_scene"
+    },
+    "1463EAC0-883F-493A-9A33-6757CC8FF48B": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 5,
+              "z": 10
+            },
+            "rotation": {
+              "x": -0.4636,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "scene-preview-camera",
+          "props": {}
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 0,
+      "name": "scene preview camera"
+    },
+    "ED0888E7-4032-4DD9-9B43-59B02ECCCB7E": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "skybox",
+          "props": {
+            "backgroundColor": 3083598,
+            "equirectangularPath": "",
+            "cubemapPath": "/hdr/cubemap/skyboxsun25deg/",
+            "backgroundType": 0,
+            "skyboxProps": {
+              "turbidity": 10,
+              "rayleigh": 1,
+              "luminance": 1,
+              "mieCoefficient": 0.004999999999999893,
+              "mieDirectionalG": 0.99,
+              "inclination": 0.10471975511965978,
+              "azimuth": 0.5
+            }
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 1,
+      "name": "skybox"
+    },
+    "1B698482-C15A-4CEC-9247-03873520DF70": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.220446049250313e-16,
+              "y": 2.220446049250313e-16,
+              "z": 2.220446049250313e-16
+            }
+          }
+        },
+        {
+          "name": "ground-plane",
+          "props": {
+            "color": 0,
+            "generateNavmesh": false
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 2,
+      "name": "ground plane"
+    },
+    "1B698483-C15A-4CEC-9247-03873520DF70": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": -3.141592653589793,
+              "y": 1.2246467991473532e-16,
+              "z": -3.1415926535897922
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "spawn-point",
+          "props": {}
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 3,
+      "name": "spawn point"
+    },
+    "1B698484-C15A-4CEC-9247-03873520DF70": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "postprocessing",
+          "props": {
+            "options": {
+              "FXAAEffect": {
+                "isActive": true,
+                "blendFunction": 13
+              },
+              "OutlineEffect": {
+                "isActive": true,
+                "blendFunction": 16,
+                "patternTexture": null,
+                "edgeStrength": 1,
+                "pulseSpeed": 0,
+                "visibleEdgeColor": 16777215,
+                "hiddenEdgeColor": 2230538,
+                "resolutionScale": 0.5,
+                "width": -1,
+                "height": -1,
+                "kernelSize": 0,
+                "blur": false,
+                "xRay": true
+              },
+              "SSAOEffect": {
+                "isActive": false,
+                "blendFunction": 10,
+                "distanceScaling": true,
+                "depthAwareUpsampling": true,
+                "samples": 16,
+                "rings": 7,
+                "distanceThreshold": 0.125,
+                "distanceFalloff": 0.02,
+                "minRadiusScale": 1,
+                "bias": 0.25,
+                "radius": 0.01,
+                "intensity": 2,
+                "fade": 0.05
+              },
+              "DepthOfFieldEffect": {
+                "isActive": false,
+                "blendFunction": 13,
+                "focusDistance": 0.02,
+                "focalLength": 0.5,
+                "bokehScale": 1
+              },
+              "BloomEffect": {
+                "isActive": true,
+                "blendFunction": 16,
+                "kernelSize": 2,
+                "luminanceThreshold": 1,
+                "luminanceSmoothing": 0.1,
+                "intensity": 0.2
+              },
+              "ToneMappingEffect": {
+                "isActive": false,
+                "blendFunction": 13,
+                "adaptive": true,
+                "resolution": 512,
+                "middleGrey": 0.6,
+                "maxLuminance": 32,
+                "averageLuminance": 1,
+                "adaptationRate": 2
+              },
+              "BrightnessContrastEffect": {
+                "isActive": false,
+                "brightness": 0.05,
+                "contrast": 0.1
+              },
+              "HueSaturationEffect": {
+                "isActive": false,
+                "hue": 0,
+                "saturation": -0.15
+              },
+              "ColorDepthEffect": {
+                "isActive": false,
+                "bits": 16
+              },
+              "LinearTosRGBEffect": {
+                "isActive": false
+              }
+            }
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 4,
+      "name": "post processing"
+    },
+    "1B698484-C15A-4CEC-9247-03873520DF71": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "hemisphere-light",
+          "props": {
+            "skyColor": 16777215,
+            "groundColor": 16777215,
+            "intensity": 1
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 5,
+      "name": "hemisphere light"
+    },
+    "46BB52A2-E365-410F-BC37-5873691B48C9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": -0.5235987755982988,
+              "y": 0.2617993877991494,
+              "z": -1.005714020795104e-16
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "directional-light",
+          "props": {
+            "color": 6981631,
+            "intensity": 15,
+            "castShadow": true,
+            "shadowMapResolution": [
+              512,
+              512
+            ],
+            "shadowBias": 0,
+            "shadowRadius": 1,
+            "cameraFar": 100,
+            "showCameraHelper": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 6,
+      "name": "directional light"
+    },
+    "06543DB1-C5C7-436D-8564-E8FF03C127C7": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/World%20Stages%202%20Box%20Colliders.glb",
+            "textureOverride": "",
+            "matrixAutoUpdate": true,
+            "isUsingGPUInstancing": false,
+            "isDynamicObject": false
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 7,
+      "name": "Model"
+    },
+    "428A784C-5E8E-488E-9C51-4AA35A83C177": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": -250
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 500,
+              "y": 500,
+              "z": 500
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "particle-emitter",
+          "props": {
+            "src": "/static/editor/star.png",
+            "startColor": 16777215,
+            "middleColor": 16777215,
+            "endColor": 16777215,
+            "startOpacity": 0,
+            "middleOpacity": 1,
+            "endOpacity": 0,
+            "colorCurve": "linear",
+            "sizeCurve": "exponentialInOut",
+            "startSize": 5,
+            "endSize": 0.25,
+            "sizeRandomness": 0,
+            "ageRandomness": 10,
+            "lifetime": 5,
+            "lifetimeRandomness": 5,
+            "particleCount": 1000,
+            "startVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "endVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "velocityCurve": "linear",
+            "angularVelocity": 0
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 8,
+      "name": "Particle Emitter 280"
+    },
+    "14CD98C3-6BB2-4795-8EB4-1146FB23E364": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 250
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 500,
+              "y": 500,
+              "z": 500
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "particle-emitter",
+          "props": {
+            "src": "/static/editor/star.png",
+            "startColor": 16777215,
+            "middleColor": 16777215,
+            "endColor": 16777215,
+            "startOpacity": 0,
+            "middleOpacity": 1,
+            "endOpacity": 0,
+            "colorCurve": "linear",
+            "sizeCurve": "exponentialInOut",
+            "startSize": 5,
+            "endSize": 0.25,
+            "sizeRandomness": 0,
+            "ageRandomness": 10,
+            "lifetime": 5,
+            "lifetimeRandomness": 5,
+            "particleCount": 1000,
+            "startVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "endVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "velocityCurve": "linear",
+            "angularVelocity": 0
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 9,
+      "name": "Particle Emitter 281"
+    },
+    "61512CE7-ADC2-4A45-9BA5-BF0309CDA805": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 250,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5707963267948966,
+              "z": 0
+            },
+            "scale": {
+              "x": 500,
+              "y": 500,
+              "z": 500
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "particle-emitter",
+          "props": {
+            "src": "/static/editor/star.png",
+            "startColor": 16777215,
+            "middleColor": 16777215,
+            "endColor": 16777215,
+            "startOpacity": 0,
+            "middleOpacity": 1,
+            "endOpacity": 0,
+            "colorCurve": "linear",
+            "sizeCurve": "exponentialInOut",
+            "startSize": 5,
+            "endSize": 0.25,
+            "sizeRandomness": 0,
+            "ageRandomness": 10,
+            "lifetime": 5,
+            "lifetimeRandomness": 5,
+            "particleCount": 1000,
+            "startVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "endVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "velocityCurve": "linear",
+            "angularVelocity": 0
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 10,
+      "name": "Particle Emitter 282"
+    },
+    "E313D9FC-A0F0-48C3-8A7D-EBBCE59BBD1F": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -250,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5707963267948966,
+              "z": 0
+            },
+            "scale": {
+              "x": 500,
+              "y": 500,
+              "z": 500
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "particle-emitter",
+          "props": {
+            "src": "/static/editor/star.png",
+            "startColor": 16777215,
+            "middleColor": 16777215,
+            "endColor": 16777215,
+            "startOpacity": 0,
+            "middleOpacity": 1,
+            "endOpacity": 0,
+            "colorCurve": "linear",
+            "sizeCurve": "exponentialInOut",
+            "startSize": 5,
+            "endSize": 0.25,
+            "sizeRandomness": 0,
+            "ageRandomness": 10,
+            "lifetime": 5,
+            "lifetimeRandomness": 5,
+            "particleCount": 1000,
+            "startVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "endVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0.5
+            },
+            "velocityCurve": "linear",
+            "angularVelocity": 0
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 11,
+      "name": "Particle Emitter 283"
+    },
+    "81986CAF-2D88-42A1-8F3E-53B6D573B472": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -22.5,
+              "y": 244.5,
+              "z": -399.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 500,
+              "y": 500,
+              "z": 500
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "particle-emitter",
+          "props": {
+            "src": "/static/editor/Aurora1.png",
+            "startColor": 16777215,
+            "middleColor": 16777215,
+            "endColor": 16777215,
+            "startOpacity": 0,
+            "middleOpacity": 1,
+            "endOpacity": 0,
+            "colorCurve": "linear",
+            "sizeCurve": "linear",
+            "startSize": 400,
+            "endSize": 400,
+            "sizeRandomness": 0,
+            "ageRandomness": 1,
+            "lifetime": 5,
+            "lifetimeRandomness": 5,
+            "particleCount": 10,
+            "startVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "endVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "velocityCurve": "linear",
+            "angularVelocity": 3
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 12,
+      "name": "Particle Emitter 284"
+    },
+    "C2004A53-D944-4E8D-92A8-30CEA4B4E275": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -22.5,
+              "y": 244.5,
+              "z": -399.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 500,
+              "y": 500,
+              "z": 500
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "particle-emitter",
+          "props": {
+            "src": "/static/editor/Aurora2.png",
+            "startColor": 16777215,
+            "middleColor": 16777215,
+            "endColor": 16777215,
+            "startOpacity": 0,
+            "middleOpacity": 1,
+            "endOpacity": 0,
+            "colorCurve": "linear",
+            "sizeCurve": "linear",
+            "startSize": 400,
+            "endSize": 400,
+            "sizeRandomness": 0,
+            "ageRandomness": 1,
+            "lifetime": 5,
+            "lifetimeRandomness": 5,
+            "particleCount": 10,
+            "startVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "endVelocity": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "velocityCurve": "linear",
+            "angularVelocity": 3
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 13,
+      "name": "Particle Emitter 285"
+    }    
+  },
+  "root": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC"
+}
